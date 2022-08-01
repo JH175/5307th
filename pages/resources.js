@@ -1,7 +1,7 @@
 import React from 'react';
 import Resource from '../components/Resource';
 import Image from 'next/image';
-import mmgroup from '../assets/mmgroup2.WEBP';
+import mmgroup from '../assets/mm1.jpg';
 
 const links = [
   {
