@@ -63,20 +63,28 @@ const links = [
 
 function resources() {
   return (
-    <div className='mx-auto  flex w-fit flex-col justify-center gap-5 p-10 text-center'>
-      <h2 className='text-3xl font-bold'>Resources</h2>
-      <div className='mx-auto my-10 w-[30rem] rotate-2 drop-shadow-xl'>
-        <Image src={mmgroup} alt='' />
+    <div className='min-w-[30rem]'>
+      <div className='flex flex-col justify-center gap-5'>
+        <h2 className='text-center text-3xl font-bold'>Resources</h2>
+        <p className='text-center text-xl'>
+          Below are some resources provided by dedicated members of the Marauder
+          community.
+        </p>
+        <div className='mx-auto flex min-w-[30rem] rotate-2 p-5 drop-shadow-xl'>
+          <Image src={mmgroup} alt='' />
+        </div>
+        <div className='mx-auto p-5'>
+          {links.map((link, key) => (
+            <Resource
+              key={key}
+              title={link.title}
+              url={link.url}
+              source={link.source}
+              category={link.category}
+            />
+          ))}
+        </div>
       </div>
-      {links.map((link, key) => (
-        <Resource
-          key={key}
-          title={link.title}
-          url={link.url}
-          source={link.source}
-          category={link.category}
-        />
-      ))}
     </div>
   );
 }
