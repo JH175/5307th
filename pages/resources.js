@@ -2,6 +2,7 @@ import React from 'react';
 import Resource from '../components/Resource';
 import Image from 'next/image';
 import mmgroup from '../assets/mm1.jpg';
+import Head from 'next/head';
 
 const links = [
   {
@@ -64,6 +65,9 @@ const links = [
 function resources() {
   return (
     <div className='min-w-[30rem]'>
+      <Head>
+        <title>5307 Merrill{`'`}s Marauders</title>
+      </Head>
       <div className='flex flex-col justify-center gap-5'>
         <h2 className='text-center text-3xl font-bold'>Resources</h2>
         <p className='text-center text-xl'>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import Head from 'next/head';
 import dui from '../assets/dui.svg';
 import hero1 from '../assets/hero1.jpg';
 import hero2 from '../assets/hero2.jpg';
@@ -7,7 +8,10 @@ import hero3 from '../assets/hero3.jpg';
 
 function Home() {
   return (
-    <div className=''>
+    <div>
+      <Head>
+        <title>5307 Merrill{`'`}s Marauders</title>
+      </Head>
       <div className='grid h-[35rem] min-w-[30rem] bg-hero-img bg-cover'>
         <div className='m-10 mx-auto w-[20rem] drop-shadow-lg'>
           <Image src={dui} alt='Unit Insignia' />

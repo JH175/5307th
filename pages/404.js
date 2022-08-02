@@ -2,10 +2,14 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Mapcheck from '../assets/mapcheck.jpg';
+import Head from 'next/head';
 
 function error() {
   return (
     <div className='flex flex-col justify-center gap-5 text-center'>
+      <Head>
+        <title>5307 Merrill{`'`}s Marauders</title>
+      </Head>
       <h1 className='text-4xl'>404 Error</h1>
       <h2 className='text-lg font-bold'>
         Hold up there! Let{`'`}s get a map check.

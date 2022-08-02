@@ -2,10 +2,14 @@ import Link from 'next/link';
 import React from 'react';
 import Map from '../components/Map';
 import Timeline from '../components/Timeline';
+import Head from 'next/head';
 
 function history() {
   return (
     <div>
+      <Head>
+        <title>5307 Merrill{`'`}s Marauders</title>
+      </Head>
       <div className='flex h-[35rem] w-full min-w-[30rem] items-center bg-history-img bg-cover bg-center'>
         <h2 className='mx-auto w-fit bg-[#1f1f1f] p-2 text-center text-xl text-white md:text-2xl lg:text-4xl'>
           {`The History of Merrill's Marauders`}
