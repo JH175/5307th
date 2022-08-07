@@ -45,7 +45,7 @@ function Home() {
         </p>
         <p>
           {`The unit consolidated into the 475th Infantry on August 10th, 1944.
-          There, continued combat operations in Northern Burma as part of the
+          There, it continued combat operations in Northern Burma as part of the
           MARS Task Force until early 1945. In 1954 it was redesignated the 75th
           Infantry, eventually evolving into the 75th Ranger Regiment of today.
           The legacy of the Marauders is one of absolute dedication and courage
