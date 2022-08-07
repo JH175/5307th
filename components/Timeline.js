@@ -3,6 +3,9 @@ import TimelineEvent from './TimelineEvent';
 import Quebec from '../assets/Quebec.png';
 import Lurline from '../assets/Lurline.jpg';
 import Stilwell from '../assets/Stilwell.jpg';
+// import Pangsau from '../assets/mm-pangsau-pass.png';
+import Train from '../assets/mm-train.png';
+import Camp from '../assets/mm-camp.png';
 
 const tlEvents = [
   {
@@ -21,11 +24,13 @@ const tlEvents = [
     snippet:
       'The 3 battalions of 5307th arrive in Bombay to organize and begin training at  Deolali,  a British transit camp 125 miles to the east.',
     date: '31 Oct. 1943',
+    image: Camp,
   },
   {
     snippet:
       'The unit relocates by train to Deogarh in eastern India and conducts intense jungle training.',
     date: 'Nov. 1943 - Jan. 1944',
+    image: Train,
   },
   {
     snippet:
