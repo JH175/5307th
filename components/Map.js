@@ -9,8 +9,7 @@ function Map() {
   const [lat, setLat] = useState(22.91);
   const [zoom, setZoom] = useState(4.5);
 
-  mapboxgl.accessToken =
-    'pk.eyJ1IjoiamgxNzUiLCJhIjoiY2w2YmdqaHR5MTZleTNrcWhwcDNiNThiciJ9.NNowZ67HCZ46fJRtMphXEw';
+  mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
